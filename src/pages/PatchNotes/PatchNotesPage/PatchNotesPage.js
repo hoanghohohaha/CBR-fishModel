@@ -62,7 +62,7 @@ function VersionRelease({data}) {
           <Grid container style={{marginLeft: "16px"}}>
             {data?.details.map((e, i) => {
               return <>
-                <Grid container style={{ marginTop: 8 }}>
+                <Grid container key={i} style={{ marginTop: 8 }}>
                   <Typography style={{fontSize:14}} key={i}>● {e}</Typography>
                 </Grid>
               </>

@@ -26,7 +26,7 @@ function RefsAndNotes() {
       </Grid>
       <Grid container style={{ padding: " 0 0 0 32px" }}>
         <Typography align='left' variant='body1'>Under specific user selections for <b>Fish Model: Spawning to Migration</b>, the program includes the <b>CV-Temp model</b> output for predicted Daily Average Temperature.
-          For more information, please refer to <a href='http://oceanview.pfeg.noaa.gov/CVTEMP/' class='external' target='new'>Central Valley Temperature Mapping and Prediction (CVTEMP)</a>.</Typography>
+          For more information, please refer to <a href='http://oceanview.pfeg.noaa.gov/CVTEMP/' target='new'>Central Valley Temperature Mapping and Prediction (CVTEMP)</a>.</Typography>
       </Grid>
       <Grid container style={{ padding: "18px 0 18px 16px" }}>
         <Typography style={{ color: "#000066", fontWeight: 700, fontSize: 16 }}>10 Year average metrics for missing values</Typography>
