@@ -1,9 +1,12 @@
 import React from 'react'
+import withLayout from '../../../layout/withLayout'
 
-export default function PatchNotesPage() {
+function PatchNotesPage() {
   return (
     <div>
       this is patch note
     </div>
   )
 }
+
+export default withLayout(PatchNotesPage);

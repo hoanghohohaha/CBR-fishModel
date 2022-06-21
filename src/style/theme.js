@@ -47,41 +47,42 @@ export const mainTheme = createTheme({
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
+      '"verdana, helvetica, arial"'
     ].join(","),
     h1: {
       fontSize: "64px",
       fontWeight: 600,
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     h2: {
       fontSize: "24px",
       fontWeight: 600,
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     h3: {
       fontSize: "19px",
       fontWeight: 400,
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     h4: {
       fontSize: "18px",
       fontWeight: 400,
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     h5: {
       fontSize: "16px",
       fontWeight: 400,
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     h6: {},
     caption: {},
     body1: {
       fontSize: "16px",
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     body2: {
       fontSize: "12px",
-      fontFamily: "Poppins"
+      fontFamily: "verdana, helvetica, arial"
     },
     button: {
       fontSize: "16px",
