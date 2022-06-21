@@ -6,7 +6,9 @@ function LayoutWrapper({ children }) {
   return (
     <>
       <SubHeader />
+      <div style={{margin:"0 16px"}}>
       {children}
+      </div>
       <Footer/>
     </>
   )

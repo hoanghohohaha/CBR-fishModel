@@ -3,6 +3,7 @@ import HomePage from './pages/Home/Homepage';
 import { Routes, Route } from 'react-router-dom';
 import PatchNotesPage from './pages/PatchNotes/PatchNotesPage/PatchNotesPage';
 import FishModelPage from './pages/Models/Fish/FishModelPage';
+import RefsAndNotes from './pages/RefsAndNotes/RefsAndNotes';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/fishmodel" element={<FishModelPage />} />
+          <Route path="/refs" element={<RefsAndNotes/>}/>
           <Route path='/patchnote' element={<PatchNotesPage />} />
           {/* <Route path="/setting" element={<SettingPage />} />
           <Route path="/login" element={<LoginPage />} />
