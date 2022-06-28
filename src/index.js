@@ -10,7 +10,7 @@ import { mainTheme } from './style/theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="CBR-fishModel">
       <ThemeProvider theme={mainTheme}>
         <App />
       </ThemeProvider>
