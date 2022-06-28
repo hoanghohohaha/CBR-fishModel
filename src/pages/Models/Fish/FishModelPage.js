@@ -253,7 +253,7 @@ function FishModelPage() {
                 </Grid>
               </Collapse>
               
-              <Collapse style={{ width: "100%" }} in={inputState >= InputSetting.Immediate}>
+              <Collapse style={{ width: "100%" }} in={inputState >= InputSetting.Full}>
                 <Typography align="left" style={{ fontSize: 16, marginTop: 12 }} gutterBottom variant="h6">Additional inputs</Typography>
                 <Grid container alignItems="center">
                   <Grid item>
