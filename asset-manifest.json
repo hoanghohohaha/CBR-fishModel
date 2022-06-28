@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CBR-fishModel/static/css/main.132eec52.css",
-    "main.js": "/CBR-fishModel/static/js/main.dcdd8ce2.js",
+    "main.js": "/CBR-fishModel/static/js/main.c70240b1.js",
     "static/js/787.c07f1818.chunk.js": "/CBR-fishModel/static/js/787.c07f1818.chunk.js",
     "static/media/EggGrowthCompare.png": "/CBR-fishModel/static/media/EggGrowthCompare.cc0fb2c30792d066a11c.png",
     "index.html": "/CBR-fishModel/index.html",
     "main.132eec52.css.map": "/CBR-fishModel/static/css/main.132eec52.css.map",
-    "main.dcdd8ce2.js.map": "/CBR-fishModel/static/js/main.dcdd8ce2.js.map",
+    "main.c70240b1.js.map": "/CBR-fishModel/static/js/main.c70240b1.js.map",
     "787.c07f1818.chunk.js.map": "/CBR-fishModel/static/js/787.c07f1818.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.132eec52.css",
-    "static/js/main.dcdd8ce2.js"
+    "static/js/main.c70240b1.js"
   ]
 }
