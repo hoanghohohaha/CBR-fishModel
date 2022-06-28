@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.132eec52.css",
+    "main.js": "/static/js/main.2a798c61.js",
+    "static/js/787.c07f1818.chunk.js": "/static/js/787.c07f1818.chunk.js",
+    "static/media/EggGrowthCompare.png": "/static/media/EggGrowthCompare.cc0fb2c30792d066a11c.png",
+    "index.html": "/index.html",
+    "main.132eec52.css.map": "/static/css/main.132eec52.css.map",
+    "main.2a798c61.js.map": "/static/js/main.2a798c61.js.map",
+    "787.c07f1818.chunk.js.map": "/static/js/787.c07f1818.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.132eec52.css",
+    "static/js/main.2a798c61.js"
+  ]
+}
