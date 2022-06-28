@@ -119,10 +119,10 @@ function FishModelPage() {
                     </TextField>
                   </Grid>
                 </Grid>
-                {year === 2022 && (<Grid item xs={5}>
-                  <Typography variant="h6" style={{fontSize:16, fontWeight: 700}} color="error">WARNING: Missing data for current year, forecast mode enable</Typography>
-                </Grid>)}
               </Grid>
+              {year === 2022 && (<Grid>
+                <Typography variant="h6" style={{ fontSize: 16, fontWeight: 700 }} color="error">WARNING: Missing data for current year, forecast mode enable</Typography>
+              </Grid>)}
 
               {/* Immediate mode */}
               <Collapse style={{ width: "100%", marginTop: 12 }} in={inputState >= InputSetting.Immediate}>
