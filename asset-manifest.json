@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.132eec52.css",
-    "main.js": "/static/js/main.036d4f7d.js",
-    "static/js/787.c07f1818.chunk.js": "/static/js/787.c07f1818.chunk.js",
-    "static/media/EggGrowthCompare.png": "/static/media/EggGrowthCompare.cc0fb2c30792d066a11c.png",
-    "index.html": "/index.html",
-    "main.132eec52.css.map": "/static/css/main.132eec52.css.map",
-    "main.036d4f7d.js.map": "/static/js/main.036d4f7d.js.map",
-    "787.c07f1818.chunk.js.map": "/static/js/787.c07f1818.chunk.js.map"
+    "main.css": "/hoanghohohaha.github.io/CBR-fishModel/static/css/main.132eec52.css",
+    "main.js": "/hoanghohohaha.github.io/CBR-fishModel/static/js/main.3cad43ba.js",
+    "static/js/787.c07f1818.chunk.js": "/hoanghohohaha.github.io/CBR-fishModel/static/js/787.c07f1818.chunk.js",
+    "static/media/EggGrowthCompare.png": "/hoanghohohaha.github.io/CBR-fishModel/static/media/EggGrowthCompare.cc0fb2c30792d066a11c.png",
+    "index.html": "/hoanghohohaha.github.io/CBR-fishModel/index.html",
+    "main.132eec52.css.map": "/hoanghohohaha.github.io/CBR-fishModel/static/css/main.132eec52.css.map",
+    "main.3cad43ba.js.map": "/hoanghohohaha.github.io/CBR-fishModel/static/js/main.3cad43ba.js.map",
+    "787.c07f1818.chunk.js.map": "/hoanghohohaha.github.io/CBR-fishModel/static/js/787.c07f1818.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.132eec52.css",
-    "static/js/main.036d4f7d.js"
+    "static/js/main.3cad43ba.js"
   ]
 }
