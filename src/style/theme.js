@@ -2,6 +2,31 @@ import { createTheme } from '@mui/material/styles';
 
 export const mainTheme = createTheme({
   components: {
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          fontSize: 12,
+          textAlign: "left",
+        }
+      }
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontSize:12,
+        }
+      }
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          
+        },
+        input: {
+          
+        }
+      }
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -30,8 +55,8 @@ export const mainTheme = createTheme({
       paper: "white",
     },
     text: {
-      primary: "#7B7B7C",
-      secondary: "#FAFAFA",
+      primary: "#000000",
+      secondary: "#000000",
     },
   },
   typography: {
