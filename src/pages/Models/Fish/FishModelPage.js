@@ -1,5 +1,6 @@
 import { Button, Checkbox, Collapse, Grid, Input, MenuItem, Radio, Select, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
+import FurtherInformationSection from "../../../components/FishPage/FurtherInformationSection";
 import withLayout from "../../../layout/withLayout";
 
 // Enum
@@ -86,10 +87,10 @@ function FishModelPage() {
 
         {/* Content */}
         <Grid container justifyContent={"space-between"} style={{ marginTop: 24 }}>
-          <Grid item xs={7} style={{paddingLeft: 24}}>
+          <Grid item xs={7} style={{paddingRight: 24}}>
             <Grid container>
               <Grid container justifyContent={"space-between"}>
-                <Typography fullWidth>Input Setting</Typography>
+                <Typography fullWidth>Input Settings</Typography>
                 <Button>
                   <Typography variant="caption">Reset input</Typography>
                 </Button>
@@ -131,12 +132,15 @@ function FishModelPage() {
                 </Grid>
                 <Grid container spacing={2} alignItems="center">
                   <Grid item>
-                    <Typography variant="caption">Forecast with NOAA temp</Typography>
+                    <Typography variant="caption">Forecast with NOAA temp from </Typography>
+                    <a href="https://oceanview.pfeg.noaa.gov/CVTEMP/river">
+                      <Typography variant="caption">NOAA CVtemp</Typography>
+                    </a>
                   </Grid>
                   <Grid item>
-                    <TextField defaultValue={1} disabled={year !== 2022} select size="small">
-                      <MenuItem value={2022}>NOAA 1</MenuItem>
-                      <MenuItem value={1}>NOAA 2</MenuItem>
+                    <TextField defaultValue={"USBR_NO_W2 25L3MTO"} disabled={year !== 2022} select size="small">
+                      <MenuItem value={"USBR_NO_W2 25L3MTO"}>USBR_NO_W2 25L3MTO</MenuItem>
+                      <MenuItem value={"NOAA_Leakage 25L3MTO"}>NOAA_Leakage 25L3MTO</MenuItem>
                     </TextField>
                   </Grid>
                 </Grid>
@@ -158,7 +162,7 @@ function FishModelPage() {
                 </Collapse>
                 
                 {/* Immed */}
-                <Typography align="left" style={{ fontSize: 16, marginTop: 12 }} gutterBottom variant="h6">Winter Redd Forecast Setting</Typography>
+                <Typography align="left" style={{ fontSize: 16, marginTop: 12 }} gutterBottom variant="h6">Winter Redd Forecast Settings</Typography>
                 <Grid container spacing={2} alignItems="center">
                   <Grid item>
                     <Typography variant="caption">Location</Typography>
@@ -174,6 +178,9 @@ function FishModelPage() {
                   </Grid>
                   <Grid item>
                     <TextField defaultValue={"300"} size="small" />
+                  </Grid>
+                  <Grid item>
+                    <Typography variant="caption"> redds</Typography>
                   </Grid>
                 </Grid>
               </Collapse>
@@ -259,7 +266,7 @@ function FishModelPage() {
                   <Grid item>
                     <Typography variant="caption">Eggs per Redd </Typography>
                     <TextField size="small" />
-                    <Typography variant="caption"> Oppenheim (2014)</Typography>
+                    <Typography variant="caption">Oppenheim (2014)</Typography>
                   </Grid>
                 </Grid>
               </Collapse>
@@ -268,10 +275,10 @@ function FishModelPage() {
               <Grid container justifyContent={"space-between"}>
                 <Grid item>
                   <Button variant="text" style={{ padding: 8 }} onClick={() => { InputSettingModeHandler(inputState, setInputState, InputSetting.Immediate) }}>
-                    <Typography variant="body2">{inputState >= InputSetting.Immediate ? "Close" : "Open"} immediate setting</Typography>
+                    <Typography variant="body2">{inputState >= InputSetting.Immediate ? "Close" : "Open"} immediate settings</Typography>
                   </Button>
                   <Button variant="text" style={{ padding: 8 }} onClick={() => {InputSettingModeHandler(inputState, setInputState, InputSetting.Full)}}>
-                    <Typography variant="body2">{ inputState >= InputSetting.Full ? "Close" : "Open"} full setting</Typography>
+                    <Typography variant="body2">{ inputState >= InputSetting.Full ? "Close" : "Open"} full settings</Typography>
                   </Button>
                 </Grid>
                 <Grid item>
@@ -306,7 +313,7 @@ function FishModelPage() {
           </Grid>
 
           {/* Schenatic map stuff go here */}
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <div style={{
               height: "400px", width: "100%",
               background:"black"
@@ -315,6 +322,10 @@ function FishModelPage() {
             </div>
           </Grid>
         </Grid>
+
+        {/*  Further information */}
+        <FurtherInformationSection />
+
       </Grid>
     </>
   )

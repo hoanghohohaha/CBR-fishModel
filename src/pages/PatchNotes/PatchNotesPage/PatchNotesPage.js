@@ -10,23 +10,6 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import { Grid, Typography } from '@mui/material';
 import versionControlConfig from '../../../config/version';
 
-const versionControlTest = [
-  {
-    version: "test",
-    date:"today",
-    tags: ["bugs", "fixed", "new feature"],
-    details: ["detail 1", "detail 2", "detail 3"]
-  },
-  
-  {
-    version: "2.1",
-    date: "N/A",
-    tags: ["bugs", "fixed", "new feature"],
-    details: ["Options for redd dewatering.", "Options for NOAA temperature forecasts."]
-  }
-]
-
-
 function VersionRelease({data}) {
   return (
     <>
@@ -34,15 +17,15 @@ function VersionRelease({data}) {
         <TimelineOppositeContent style={{ display: "none" }}>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot>
+          <TimelineDot style={{backgroundColor:"white", border: "4px solid #000066"}}>
             {data.mark}
           </TimelineDot>
           <TimelineConnector color="secondary"/>
         </TimelineSeparator>
         <TimelineContent>
-          <Grid container justifyContent={"space-between"}>
+          <Grid container justifyContent={"space-between"} style={{marginTop: 10}}>
             <Grid item>
-              <Typography style={{fontWeight:700, fontSize: 20}}>Version {data?.version}</Typography>
+              <Typography style={{fontWeight:700, fontSize: 16, color:"#000066"}}>{data?.version}</Typography>
             </Grid>
             <Grid item>
               <Typography style={{fontSize:14}}>{data?.date}</Typography>
@@ -77,7 +60,12 @@ function VersionRelease({data}) {
 function PatchNotesPage() {
   return (
     <div>
-      <Timeline>
+      <Grid container style={{borderBottom: "1px solid black"}}>
+        <Typography align="left" style={{ color: "#000066", fontWeight: 700, fontSize: 20, margin: 8 }}>
+          Patch Notes
+        </Typography>
+      </Grid>
+      <Timeline style={{marginTop: 12}}>
         {
           versionControlConfig.map((e, i) => {
             return <VersionRelease key={i} data={e}/>

@@ -1,6 +1,20 @@
-import FlagCircleIcon from '@mui/icons-material/FlagCircle';
+import FlagIcon from '@mui/icons-material/Flag';
 import CircleIcon from '@mui/icons-material/Circle';
-import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
+import NotificationImportantIcon from '@mui/icons-material/NotificationImportant';
+
+const sizeConfiguration = 20
+
+const versionSizeSetting = {
+  height: sizeConfiguration,
+  width: sizeConfiguration,
+  color:"#000066",
+}
+
+const versionIconSettingConfig = {
+  normal: <CircleIcon style={versionSizeSetting} />,
+  alert: <NotificationImportantIcon style={versionSizeSetting} />,
+  milestone: <FlagIcon style={versionSizeSetting} />
+}
 
 const versionControlConfig = [
   {
@@ -12,7 +26,7 @@ const versionControlConfig = [
       "Higher precision on calculations to reduce rounding errors",
       "If critical window is greater than the days-to-hatching, it is adjusted automatically and a warning is shown in the UI. Batch runs are silently corrected.",
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.7.3",
@@ -21,7 +35,7 @@ const versionControlConfig = [
     details: [
       "Redd distributions can be generated from Aerial surveys (since 1990) or Carcass surveys (since 2000). Aerial Survey results were the previous default.",
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.7.2",
@@ -30,7 +44,7 @@ const versionControlConfig = [
     details: [
       "Added server support and checkbox on GUI to generate query strings",
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.7.1",
@@ -41,7 +55,7 @@ const versionControlConfig = [
       "PDF Documentation for dewatering mortality available from link",
       "PDF Documentation for redd forecasting available from link"
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.7",
@@ -52,7 +66,7 @@ const versionControlConfig = [
       "Small changes to layout of the FishModel page.",
       "Small changes to the 'heatmap' graphics."
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.6.1",
@@ -61,7 +75,7 @@ const versionControlConfig = [
     details: [
       "Latest parameters from the calibration of Stage-Independent TDM model",
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.6",
@@ -74,7 +88,7 @@ const versionControlConfig = [
       "Accepted formats in month/day/(year) order. Examples: M/D MM/DD MM/DD/YY MM/DD/YYYY",
       "Enhanced bulk processing-with and access-to cached files. Contact developers at web@cbr.washington.edu for more information."
     ],
-    mark: <CircleIcon style={{height: 40, width: 40}}/>
+    mark: versionIconSettingConfig.milestone
   },
   {
     version: "2.5",
@@ -86,7 +100,7 @@ const versionControlConfig = [
       "Capability of bulk temperature uploads. Contact develpers at web@cbr.washington.edu for more information.",
       "Enhanced bulk processing methods. Contact develpers at web@cbr.washington.edu for more information."
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.normal
   },
   {
     version: "2.4",
@@ -102,7 +116,7 @@ const versionControlConfig = [
       "Minor rerranging of user controls.",
       "Changes to default pulse-migration equations."
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.milestone
   },{
     version: "2.3.1",
     date: "Dec 8, 2020",
@@ -111,7 +125,7 @@ const versionControlConfig = [
       "Hatching ATUs re-described better as 'end of critical window",
       "Moved SHINY apps home directory to cbr-cvpas.shinyapps.io",
     ],
-    mark: <CircleIcon style={{ height: 40, width: 40}}/>
+    mark:versionIconSettingConfig.normal
   },
   {
     version: "2.3",
@@ -125,7 +139,7 @@ const versionControlConfig = [
       "Minor interface changes.",
       "Input report includes other details: date, version, and the multiple years of redd combinations if chosen."
     ],
-    mark: <CircleNotificationsIcon style={{ height: 40, width: 40}} />
+    mark: versionIconSettingConfig.alert
   },
   {
     version: "2.2",
@@ -144,14 +158,14 @@ const versionControlConfig = [
       "Both show-max and show-mean temperature exposure reports are generated (instead of a choice).",
       "Options for bulk processing exist. Must must contact developers for methods."
     ],
-    mark: <FlagCircleIcon style={{ height: 40, width: 40 }} />
+    mark: versionIconSettingConfig.milestone
   },
   {
     version: "2.1",
     date: "N/A",
     tags: ["bugs", "fixed", "new feature"],
     details: ["Options for redd dewatering.", "Options for NOAA temperature forecasts."],
-    mark: <FlagCircleIcon style={{ height: 40, width: 40}} />
+    mark: versionIconSettingConfig.milestone
   }
 ]
 
